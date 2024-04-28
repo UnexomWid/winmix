@@ -7,7 +7,7 @@
 //! ⚠ This libary uses **unsafe** functions from the [windows](https://crates.io/crates/windows) crate. ⚠
 //!
 //! # Usage
-//! 
+//!
 //! ```no_run
 //! use winmix::WinMix;
 //!
@@ -33,7 +33,7 @@
 //!         // You can also get the current volume, or see if it's muted
 //!         let vol = session.vol.get_master_volume().unwrap();
 //!         let is_muted = session.vol.get_mute().unwrap();
-//! 
+//!
 //!         println!("Vol: {}   Muted: {}", vol, is_muted);
 //!         println!();
 //!     }
