@@ -21,7 +21,7 @@
 //!         // You get the PID and path of the process that controls this audio session
 //!         println!("pid: {}   path: {}", session.pid, session.path);
 //!
-//!         // You can now mute or change the volume
+//!         // You can mute or change the volume
 //!         session.vol.set_mute(true).unwrap();
 //!         session.vol.set_mute(false).unwrap();
 //!
