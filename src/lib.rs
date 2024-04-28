@@ -1,8 +1,8 @@
 //! WinMix: Change Windows Mixer Volume via Rust
 //!
-//! This is a simple library that can be used to change the volume of each program in the Windows Mixer.
+//! This is a rust library that allows you to individually change the volume of each program in the Windows Mixer.
 //!
-//! For example, it can be used to set the volume of `chrome.exe` to `0` while leaving other apps alone.
+//! For example, you can set the volume of `chrome.exe` to `0` while leaving other apps alone.
 //!
 //! ⚠ This libary uses **unsafe** functions from the [windows](https://crates.io/crates/windows) crate. ⚠
 //!
