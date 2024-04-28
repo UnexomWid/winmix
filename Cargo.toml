@@ -1,7 +1,7 @@
 [package]
 name = "winmix"
 version = "0.1.0"
-license = "MIT"
+license = "MIT OR Apache-2.0"
 description = "Change Windows Mixer Volume via Rust"
 keywords = ["audio", "windows"]
 repository = "https://github.com/UnexomWid/winmix"
