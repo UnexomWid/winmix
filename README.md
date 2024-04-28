@@ -42,7 +42,7 @@ unsafe {
 
 # License <a href="https://github.com/UnexomWid/winmix/blob/master/LICENSE"><img align="right" src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT" /></a>
 
-**WinMix** was created by [UnexomWid](https://uw.exom.dev). It is licensed under [MIT](https://github.com/UnexomWid/winmix/blob/master/LICENSE-MIT) OR [Apache 2](https://github.com/UnexomWid/winmix/blob/master/LICENSE-Apache).
+**WinMix** was created by [UnexomWid](https://uw.exom.dev). It is licensed under [MIT](https://github.com/UnexomWid/winmix/blob/master/LICENSE-MIT) OR [Apache 2](https://github.com/UnexomWid/winmix/blob/master/LICENSE-APACHE).
 
 # References
 
