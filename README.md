@@ -1,6 +1,6 @@
 # About <a href="https://www.rust-lang.org/"><img align="right" src="https://img.shields.io/badge/Rust-1%2E73-f74c00?logo=Rust" alt="Rust 1.73" /></a>
 
-**WinMix** is a rust library that allows you to individually change the volume of each program in the Windows Mixer.
+**WinMix** is a rust library that allows you to individually change the volume of each program in the Windows Volume Mixer.
 
 For example, you can set the volume of `chrome.exe` to `0` while leaving other apps alone.
 
