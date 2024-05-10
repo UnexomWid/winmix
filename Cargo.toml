@@ -2,7 +2,7 @@
 name = "winmix"
 version = "0.1.2"
 license = "MIT OR Apache-2.0"
-description = "Change Windows Mixer Volume via Rust"
+description = "Change Windows Volume Mixer via Rust"
 keywords = ["audio", "windows"]
 repository = "https://github.com/UnexomWid/winmix"
 edition = "2021"
