@@ -115,9 +115,13 @@ impl WinMix {
 
                 let vol: ISimpleAudioVolume = ctrl2.cast()?;
 
+                // Trim trailing \0
+                let mut path = String::from_utf16_lossy(&path);
+                path.truncate(path.trim_matches(char::from(0)).len());
+
                 result.push(Session {
                     pid,
-                    path: String::from_utf16_lossy(&path),
+                    path,
                     vol: SimpleVolume { handle: vol },
                 });
             }
