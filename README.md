@@ -14,14 +14,14 @@ use winmix::WinMix;
 unsafe {
     let winmix = WinMix::default();
 
-    // Enumerate all audio sessions, one for each program
+    // Get a list of all programs that have an entry in the volume mixer
     let sessions = winmix.enumerate()?;
 
     for session in sessions {
-        // You get the PID and path of the process that controls this audio session
+        // PID and path of the process
         println!("pid: {}   path: {}", session.pid, session.path);
 
-        // You can mute or change the volume
+        // Mute
         session.vol.set_mute(true)?;
         session.vol.set_mute(false)?;
 
@@ -30,7 +30,7 @@ unsafe {
         // Back to 100% volume
         session.vol.set_master_volume(1.0)?;
 
-        // You can also get the current volume, or see if it's muted
+        // Get the current volume, or see if it's muted
         let vol = session.vol.get_master_volume()?;
         let is_muted = session.vol.get_mute()?;
 
