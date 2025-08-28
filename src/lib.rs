@@ -53,7 +53,7 @@ use windows::{
         System::{
             Com::{CoCreateInstance, CoInitialize, CoUninitialize, CLSCTX_ALL},
             ProcessStatus::GetModuleFileNameExW,
-            Threading::{OpenProcess, PROCESS_QUERY_INFORMATION, PROCESS_VM_READ},
+            Threading::{OpenProcess, PROCESS_QUERY_LIMITED_INFORMATION},
         },
     },
 };
@@ -101,7 +101,7 @@ impl WinMix {
                     continue;
                 }
 
-                let proc = OpenProcess(PROCESS_QUERY_INFORMATION | PROCESS_VM_READ, false, pid)?;
+                let proc = OpenProcess(PROCESS_QUERY_LIMITED_INFORMATION, false, pid)?;
 
                 let mut path: [u16; MAX_PATH as usize] = [0; MAX_PATH as usize];
 
